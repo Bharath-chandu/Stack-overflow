@@ -29,7 +29,7 @@ const Navbar = () => {
             }
         }
         dispatch(setCurrentUser( JSON.parse(localStorage.getItem('Profile'))))
-    },[User?.token, dispatch])
+    },[User?.token, dispatch]) // eslint-disable-next-line no-console
 
     return (
         <nav className='main-nav'>
